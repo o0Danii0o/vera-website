@@ -581,10 +581,9 @@
                 class="video-btn"
                 data-bs-toggle="modal"
                 data-bs-target="#videoModal"
-                data-bs-src="https://www.youtube.com/watch?v=_4kHxtiuML0&t=13s&ab_channel=GreenredProductions-RelaxingMusic"
+                data-bs-src="https://www.youtube.com/embed/_4kHxtiuML0?start=13"
               >
-                <span class="video-play-button">
-                  <span></span> </span
+                <span class="video-play-button"> <span></span> </span
               ></a>
             </div>
           </div>
@@ -592,23 +591,43 @@
         <div class="row video-points px-6 mt-5">
           <div class="col-lg-4">
             <h4 class="fw-bold">10 Years Of Experience</h4>
-            <p>With over 10 years of experience, we have gained valuable insights
+            <p>
+              With over 10 years of experience, we have gained valuable insights
               and expertise to deliver high-quality software solutions.
             </p>
           </div>
 
           <div class="col-lg-4">
             <h4 class="fw-bold">Enduring Partnerships</h4>
-            <p>We believe in building enduring partnerships with our clients. We
+            <p>
+              We believe in building enduring partnerships with our clients. We
               establish long-term relationship based on trust.
             </p>
           </div>
 
           <div class="col-lg-4">
             <h4 class="fw-bold">Skilled Capable Team</h4>
-            <p>Our team consits of skilled and capable professionals who are
+            <p>
+              Our team consits of skilled and capable professionals who are
               passionate about delivering excellence.
             </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Modal -->
+      <div class="video-modal">
+        <div id="videoModal" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  frameborder="0"
+                  class="embed-responsive-item"
+                  id="video"
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </div>

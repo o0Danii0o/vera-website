@@ -32,3 +32,29 @@ function userScroll(){
 }
 
 document.addEventListener('DOMContentLoaded', userScroll);
+
+// Video Modal  
+const videoBtn = document.querySelector('.video-btn');
+const videoModal = document.querySelector('#videoModal');
+const video = document.querySelector("#video");
+let videoSrc = videoBtn.getAttribute('data-bs-src');
+
+if (videoModal) {
+    videoModal.addEventListener('show.bs.modal', (event) => {
+        const button = event.relatedTarget;
+        
+        if (button) {
+            const videoSrc = button.getAttribute('data-bs-src');
+            
+            if (videoSrc) {
+                video.setAttribute('src', `${videoSrc}?modestbranding=1&showinfo=0`);
+            } else {
+                console.error("Video source is missing.");
+            }
+        }
+    });
+
+    videoModal.addEventListener('hide.bs.modal', () => {
+        video.setAttribute('src', '');
+    });
+}
