@@ -18,6 +18,14 @@ Bootstrap Business website for software solutions, but could easily be changed t
 
 ## Usage
 
+To run the website, open the following link:
+
+[Vera Website Vercel](https://vera-website-rust.vercel.app/)
+
+Follow the instructions below to run it locally on your machine.
+
+### Prerequisites
+
 This website is built with [Bootstrap](https://getbootstrap.com/) and [Sass](https://sass-lang.com/). It uses [Font Awesome](https://fontawesome.com/) for icons.
 
 In order to customize this website, you need to install [Node.js](https://nodejs.org/en/). Then, clone this repository and run:
